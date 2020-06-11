@@ -3,6 +3,7 @@ import images from "./images";
 import "./assets/main.css";
 import ImageGallery from "./components/ImageGallery";
 import FullSize from "./components/FullSize";
+import Home from "./components/Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div>
       <Router>
         <Switch>
+          <Route exact path="/" component={() => <Home title="CCL Images" />} />
           <Route
             exact
             path="/desktopheros"
