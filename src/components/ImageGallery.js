@@ -7,14 +7,14 @@ import { Link } from "react-router-dom";
 import { path } from "../images/index";
 import Overdrive from "react-overdrive";
 import Nav from "../components/Nav";
-import Alert from "../components/Alert";
+// import Alert from "../components/Alert";
 
 import { v4 as uuidv4 } from "uuid";
 
 export default function ImageGallery({ images, title }) {
   const [loading, setLoading] = useState(false);
   const [term, setTerm] = useState("");
-  const [showAlert, setShowAlert] = useState(false);
+  // const [showAlert, setShowAlert] = useState(false);
   let results = images.filter((i) => i.title.includes(term));
 
   const handleOnChange = (e) => {
@@ -24,10 +24,10 @@ export default function ImageGallery({ images, title }) {
   };
 
   const onSuccess = () => {
-    setShowAlert(true);
-    setTimeout(() => {
-      setShowAlert(false);
-    }, 4000);
+    // setShowAlert(true);
+    // setTimeout(() => {
+    //   setShowAlert(false);
+    // }, 4000);
   };
 
   const filterRes = () => {
@@ -38,8 +38,8 @@ export default function ImageGallery({ images, title }) {
   return (
     <div className="relative">
       <Nav title={title} />
-      {console.log(showAlert)}
-      {showAlert && <Alert />}
+      {/* {console.log(showAlert)}
+      {showAlert && <Alert />} */}
       <div className="flex container mx-auto justify-center my-5 flex-col">
         <input
           className="rounded p-5 text-4xl border-gray-500 w-full focus:outline-none"
