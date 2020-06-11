@@ -48,6 +48,13 @@ function App() {
               />
             )}
           />
+          <Route
+            exact
+            path="/tgopop"
+            component={() => (
+              <ImageGallery images={images.tgopopup} title="TGO Pop Up" />
+            )}
+          />
         </Switch>
       </Router>
     </div>

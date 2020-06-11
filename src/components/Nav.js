@@ -45,6 +45,12 @@ export default function Nav({ title }) {
           >
             Mobile Sticky
           </Link>
+          <Link
+            to="/tgopop"
+            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          >
+            TGO Pop Up & Extras
+          </Link>
         </div>
       </div>
     </nav>
