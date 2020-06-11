@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Clipboard from "react-clipboard.js";
 import loadingImg from "../assets/loading.gif";
 import eye from "../assets/eye.svg";
