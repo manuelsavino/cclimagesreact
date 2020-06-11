@@ -2267,7 +2267,7 @@ const images = {
 
 export const path = {
   dh2018: {
-    title: "/~/media/Images/hp-merch/2018/desktop/heros/",
+    path: "/~/media/Images/hp-merch/2018/desktop/heros/",
     dimentions: "centerCrop=1&w=500&h=200",
   },
   dh2019: {
