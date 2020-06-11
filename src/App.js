@@ -52,9 +52,26 @@ function App() {
           />
           <Route
             exact
+            path="/cruisedeals"
+            component={() => (
+              <ImageGallery images={images.cruisedeals} title="Cruise Deals" />
+            )}
+          />
+          <Route
+            exact
             path="/tgopop"
             component={() => (
               <ImageGallery images={images.tgopopup} title="TGO Pop Up" />
+            )}
+          />
+          <Route
+            exact
+            path="/searchbanners"
+            component={() => (
+              <ImageGallery
+                images={images.searchbanners}
+                title="Search Banners"
+              />
             )}
           />
         </Switch>

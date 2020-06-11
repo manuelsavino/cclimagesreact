@@ -58,9 +58,11 @@ export default function ImageGallery({ images, title }) {
           results.length ? (
             results.map((image) => (
               <Clipboard
-                data-clipboard-text={`${path[image.year].path}${
-                  image.title
-                }.ashx`}
+                data-clipboard-text={
+                  path[image.year].scpath
+                    ? `${path[image.year].scpath}${image.title}`
+                    : `${path[image.year].path}${image.title}.ashx`
+                }
                 onSuccess={onSuccess}
                 key={uuidv4()}
               >
@@ -83,7 +85,8 @@ export default function ImageGallery({ images, title }) {
                         to={{
                           pathname: "/view",
                           state: {
-                            path: `${path[image.year].path}${image.title}`,
+                            // path: `${path[image.year].path}${image.title}`,
+                            image: image,
                           },
                         }}
                       >

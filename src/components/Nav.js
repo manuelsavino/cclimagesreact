@@ -51,6 +51,18 @@ export default function Nav({ title }) {
           >
             TGO Pop Up & Extras
           </Link>
+          <Link
+            to="/cruisedeals"
+            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          >
+            Cruise Deals
+          </Link>
+          <Link
+            to="/searchbanners"
+            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          >
+            Search Banners
+          </Link>
         </div>
       </div>
     </nav>
