@@ -22,6 +22,16 @@ function App() {
               />
             )}
           />
+          <Route
+            exact
+            path="/desktopbtiles"
+            component={() => (
+              <ImageGallery
+                images={images.desktopBTiles}
+                title="Desktop B Tiles"
+              />
+            )}
+          />
           <Route exact path="/view" component={FullSize} />
           <Route
             exact
