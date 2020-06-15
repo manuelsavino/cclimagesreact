@@ -1,6 +1,7 @@
 import React from "react";
 import images from "./images";
-import "./assets/main.css";
+// import "./assets/main.css";
+import "./tailwind.generated.css";
 import ImageGallery from "./components/ImageGallery";
 import FullSize from "./components/FullSize";
 import Home from "./components/Home";
