@@ -841,6 +841,8 @@ const images = {
   ],
 
   mobilebtiles: [
+    { year: "mb2020", title: "man-skyride-ocean" },
+    { year: "mb2020", title: "light-blue-wavy-pattern" },
     { year: "mb2020", title: "50th-anniversary-b1" },
     { year: "mb2020", title: "blue-bubble-b1" },
     { year: "mb2020", title: "blue-bubble-b2" },
@@ -2619,7 +2621,11 @@ const images = {
     { year: "sb2020", title: "zipline-woman-mbl" },
     { year: "sb2020", title: "zipline-woman-dsk" },
   ],
-  desktopC: [{ year: "dc2020", title: "funnel-sun-beachball-pattern" }],
+
+  desktopC: [
+    { year: "dc2020", title: "man-skyride-ocean" }
+    { year: "dc2020", title: "funnel-sun-beachball-pattern" }
+],
 };
 
 export const path = {
