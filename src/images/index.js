@@ -2623,9 +2623,9 @@ const images = {
   ],
 
   desktopC: [
-    { year: "dc2020", title: "man-skyride-ocean" }
-    { year: "dc2020", title: "funnel-sun-beachball-pattern" }
-],
+    { year: "dc2020", title: "man-skyride-ocean" },
+    { year: "dc2020", title: "funnel-sun-beachball-pattern" },
+  ],
 };
 
 export const path = {
