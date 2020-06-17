@@ -33,6 +33,13 @@ function App() {
               />
             )}
           />
+          <Route
+            exact
+            path="/desktopctile"
+            component={() => (
+              <ImageGallery images={images.desktopC} title="Desktop C Tile" />
+            )}
+          />
           <Route exact path="/view" component={FullSize} />
           <Route
             exact

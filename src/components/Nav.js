@@ -34,6 +34,13 @@ export default function Nav({ title }) {
             Desktop B Tiles
           </Link>
           <Link
+            to="/desktopctile"
+            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          >
+            Desktop C Tile
+          </Link>
+
+          <Link
             to="/mobileheros"
             className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
           >

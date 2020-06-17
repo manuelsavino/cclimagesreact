@@ -1,5 +1,6 @@
 const images = {
   desktopHeros: [
+    { year: "dh2020", title: "dad-son-piggyback-pool" },
     { year: "dh2020", title: "50th-anniversary" },
     { year: "dh2020", title: "blue-bubble" },
     { year: "dh2020", title: "blue-flamingo-man" },
@@ -1145,6 +1146,7 @@ const images = {
   ],
 
   desktopBTiles: [
+    { year: "db2020", title: "light-blue-waves" },
     { year: "db2019", title: "0106-PUG-B2" },
     { year: "db2019", title: "0106-PUG-B3" },
     { year: "db2019", title: "0111-Sitewide-B1" },
@@ -2617,6 +2619,7 @@ const images = {
     { year: "sb2020", title: "zipline-woman-mbl" },
     { year: "sb2020", title: "zipline-woman-dsk" },
   ],
+  desktopC: [{ year: "dc2020", title: "funnel-sun-beachball-pattern" }],
 };
 
 export const path = {
@@ -2642,6 +2645,14 @@ export const path = {
   },
   db2019: {
     path: "/~/media/Images/hp-merch/2019/desktop/tiles/",
+    dimentions: "centerCrop=1&w=300&h=200",
+  },
+  db2020: {
+    path: "/~/media/Images/hp-merch/2020/desktop/tiles/",
+    dimentions: "centerCrop=1&w=300&h=200",
+  },
+  dc2020: {
+    path: "/~/media/Images/hp-merch/2020/desktop/c-banner/",
     dimentions: "centerCrop=1&w=300&h=200",
   },
   mb2019: {
