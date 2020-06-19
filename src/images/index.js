@@ -2630,6 +2630,7 @@ const images = {
   ],
 };
 
+
 export const path = {
   dh2018: {
     path: "/~/media/Images/hp-merch/2018/desktop/heros/",
