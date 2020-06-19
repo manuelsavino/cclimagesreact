@@ -475,6 +475,8 @@ const images = {
     { year: "dh2018", title: "MER-400_0917_Short_ES_H1 jpg" },
   ],
   mobileHeros: [
+    { year: "mh2020", title: "dad-son-piggypack-pool-ptr" },
+    { year: "mh2020", title: "dad-son-piggyback-pool-lnds" },
     { year: "mh2020", title: "couple-red-chair-prt" },
     { year: "mh2020", title: "couple-red-chair-lnds" },
     { year: "mh2020", title: "balcony-couple-lnds" },
