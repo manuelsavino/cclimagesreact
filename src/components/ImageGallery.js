@@ -6,7 +6,8 @@ import sadFace from "../assets/sadFace.svg";
 import { Link } from "react-router-dom";
 import { path } from "../images/index";
 import Overdrive from "react-overdrive";
-import Nav from "../components/Nav";
+
+import { Heading } from "../components/categories/styledCardGrid";
 // import Alert from "../components/Alert";
 
 import { v4 as uuidv4 } from "uuid";
@@ -37,10 +38,23 @@ export default function ImageGallery({ images, title }) {
 
   return (
     <div className="relative">
-      <Nav title={title} />
+      {/* <Nav title={title} /> */}
+
       {/* {console.log(showAlert)}
       {showAlert && <Alert />} */}
       <div className="flex container mx-auto justify-center my-5 flex-col">
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <Heading>
+            <span>{title.toUpperCase()}</span>
+          </Heading>
+          <Link to="/">Go Back Home</Link>
+        </div>
         <input
           className="rounded p-5 text-4xl border-gray-500 w-full focus:outline-none"
           type="text"

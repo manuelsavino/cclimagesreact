@@ -11,7 +11,7 @@ export default function FullSize(props) {
   };
   return (
     <>
-      <Nav title="View Image" />
+      {/* <Nav title="View Image" /> */}
       <div className="max-w-4xl flex flex-col items-center mx-auto mt-5">
         <Overdrive id={`${path[image.year].path}${image.title}`}>
           <img
@@ -23,7 +23,7 @@ export default function FullSize(props) {
         </Overdrive>
         <div>
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-3 mr-2"
+            className="bg-yellow-500 hover:bg-yellow-400 text-gray-800 font-bold py-2 px-4 rounded mt-3 mr-2"
             onClick={goBack}
           >
             Go Back
@@ -36,7 +36,7 @@ export default function FullSize(props) {
             }
           >
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-3"
+              className="bg-yellow-500 hover:bg-yellow-400 text-gray-800 font-bold py-2 px-4 rounded mt-3"
               onClick={goBack}
             >
               Copy Path
