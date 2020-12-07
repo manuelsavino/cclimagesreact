@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/*"
+  to = "https://assets.manuels.dev"
+  status = 301
+  force = true
