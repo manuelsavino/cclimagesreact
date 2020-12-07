@@ -1,99 +1,103 @@
-import React from "react";
-import images from "./images";
+import React, { useEffect } from 'react';
+import images from './images';
 // import "./assets/main.css";
-import "./tailwind.generated.css";
-import ImageGallery from "./components/ImageGallery";
-import FullSize from "./components/FullSize";
-import Home from "./components/Home";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import './tailwind.generated.css';
+import ImageGallery from './components/ImageGallery';
+import FullSize from './components/FullSize';
+import Home from './components/Home';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
+  useEffect(() => {
+    window.location.href = 'http://assets.manuels.dev';
+  });
+
   return (
     <div>
-      <Router>
+      {/* <Router>
         <Switch>
-          <Route exact path="/" component={() => <Home title="CCL Images" />} />
+          <Route exact path='/' component={() => <Home title='CCL Images' />} />
           <Route
             exact
-            path="/desktopheros"
+            path='/desktopheros'
             component={() => (
               <ImageGallery
                 images={images.desktopHeros}
-                title="Desktop Heros"
+                title='Desktop Heros'
               />
             )}
           />
           <Route
             exact
-            path="/desktopbtiles"
+            path='/desktopbtiles'
             component={() => (
               <ImageGallery
                 images={images.desktopBTiles}
-                title="Desktop B Tiles"
+                title='Desktop B Tiles'
               />
             )}
           />
           <Route
             exact
-            path="/desktopctile"
+            path='/desktopctile'
             component={() => (
-              <ImageGallery images={images.desktopC} title="Desktop C Tile" />
+              <ImageGallery images={images.desktopC} title='Desktop C Tile' />
             )}
           />
-          <Route exact path="/view" component={FullSize} />
+          <Route exact path='/view' component={FullSize} />
           <Route
             exact
-            path="/mobileheros"
+            path='/mobileheros'
             component={() => (
-              <ImageGallery images={images.mobileHeros} title="Mobile Heros" />
+              <ImageGallery images={images.mobileHeros} title='Mobile Heros' />
             )}
           />
           <Route
             exact
-            path="/mobilebtiles"
+            path='/mobilebtiles'
             component={() => (
               <ImageGallery
                 images={images.mobilebtiles}
-                title="Mobile B Tiles"
+                title='Mobile B Tiles'
               />
             )}
           />
           <Route
             exact
-            path="/mobilesticky"
+            path='/mobilesticky'
             component={() => (
               <ImageGallery
                 images={images.mobilesticky}
-                title="Mobile Sticky"
+                title='Mobile Sticky'
               />
             )}
           />
           <Route
             exact
-            path="/cruisedeals"
+            path='/cruisedeals'
             component={() => (
-              <ImageGallery images={images.cruisedeals} title="Cruise Deals" />
+              <ImageGallery images={images.cruisedeals} title='Cruise Deals' />
             )}
           />
           <Route
             exact
-            path="/tgopop"
+            path='/tgopop'
             component={() => (
-              <ImageGallery images={images.tgopopup} title="TGO Pop Up" />
+              <ImageGallery images={images.tgopopup} title='TGO Pop Up' />
             )}
           />
           <Route
             exact
-            path="/searchbanners"
+            path='/searchbanners'
             component={() => (
               <ImageGallery
                 images={images.searchbanners}
-                title="Search Banners"
+                title='Search Banners'
               />
             )}
           />
         </Switch>
-      </Router>
+      </Router> */}
     </div>
   );
 }
